@@ -50,6 +50,79 @@ about model or system accuracy.
 The Final project will construct a larger targeted evaluation set
 representing realistic PetGuard scenarios.
 
+### Planned Data Sources
+
+The Final evaluation will target approximately **200 representative images or selected video frames** from three complementary sources.
+
+| Source | Target Size | Primary Purpose |
+|---|---:|---|
+| [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/) | 100 (50 cats + 50 dogs) | Controlled pet-detection evaluation |
+| [COCO 2017 Validation Dataset](https://cocodataset.org/#download) | 50 cat/dog scenes | Realistic and challenging pet-detection evaluation |
+| PetGuard-Specific Data | 50 images/video frames | Restricted-zone SAFE / VIOLATION evaluation |
+
+#### 1. Oxford-IIIT Pet Dataset
+
+The Oxford-IIIT Pet Dataset will provide 50 cat images and 50 dog images selected across different breeds, appearances, and poses.
+
+These samples will primarily evaluate:
+
+- Pet Detection Recall;
+- detection consistency across different breeds; and
+- detection behavior across different pet appearances and poses.
+
+Public source:
+
+[Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/)
+
+#### 2. COCO 2017 Validation Dataset
+
+Fifty images containing cats and/or dogs will be selected from the COCO 2017 Validation dataset.
+
+These samples will provide more realistic scenes containing complex backgrounds and other objects.
+
+They will support evaluation of:
+
+- Pet Detection Recall;
+- confidence behavior;
+- false or additional detections;
+- multiple-object scenes;
+- partial occlusion; and
+- small or distant pets.
+
+Public source:
+
+[COCO Dataset](https://cocodataset.org/#download)
+
+#### 3. PetGuard-Specific Evaluation Data
+
+Approximately 50 team-collected images or selected video frames will be used to evaluate the application-specific restricted-zone functionality.
+
+The planned scenarios include:
+
+- clearly SAFE;
+- clearly VIOLATION;
+- zone-boundary cases;
+- partial occlusion;
+- different lighting;
+- different viewing angles;
+- multiple pets;
+- small or distant pets; and
+- no-pet negative controls.
+
+These samples will primarily measure:
+
+- Zone Decision Accuracy;
+- False Violation Rate; and
+- processing performance.
+
+Oxford-IIIT and COCO samples primarily evaluate the pet-detection stage and will normally use `expected_zone_status = N/A`.
+
+PetGuard-specific samples will evaluate the complete SAFE / VIOLATION decision pipeline.
+
+Because PetGuard is a Tier 1 application using pretrained YOLOv8n COCO weights, these datasets are primarily used for evaluation rather than training a new object detector.
+
+---
+
 Planned scenarios include:
 
 - pet outside restricted zone;
@@ -66,17 +139,21 @@ Planned scenarios include:
 
 ## Initial Evaluation Target
 
-The initial target is approximately:
+The planned Final evaluation target is approximately:
 
-**100–200 representative images or evaluated video frames**
+**200 representative images or selected video frames**
 
-The evaluation set may be expanded if early testing reveals insufficient
-coverage of important failure cases.
+The planned distribution is:
+
+- **100 Oxford-IIIT Pet images:** 50 cats + 50 dogs;
+- **50 COCO 2017 Validation images:** realistic cat/dog scenes; and
+- **50 PetGuard-specific images or selected video frames:** application-level SAFE / VIOLATION scenarios.
+
+The evaluation set may be adjusted if early testing reveals insufficient coverage of important failure cases.
 
 The objective is not simply to collect many pet images.
 
-The evaluation set should contain scenarios that challenge the complete
-PetGuard application.
+The evaluation set should contain scenarios that challenge both the pretrained detector and the complete PetGuard application.
 
 ---
 
@@ -138,7 +215,7 @@ incorrectly interpreted as pets.
 ## Data Principle
 
 > PetGuard will be evaluated on situations that challenge the
-> application—not only easy pet photographs.
+> application not only easy pet photographs.
 
 The Final evaluation should measure the complete decision pipeline rather
 than relying on individual YOLO confidence scores as a measure of system

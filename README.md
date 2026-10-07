@@ -4,6 +4,8 @@
 
 **Tier 1 - Object Detection Application**
 
+**Tier justification:** PetGuard uses a pretrained YOLOv8n object detector for visual perception and focuses project development on restricted-zone reasoning, application logic, alerts, and evaluation rather than training a custom detector from scratch.
+
 PetGuard AI is a computer vision application designed to detect dogs and cats in images or video and determine whether a detected pet enters a user-defined restricted area.
 
 Rather than treating object detection as the final output, PetGuard combines **pretrained object detection, spatial reasoning, and application logic** to transform visual detections into meaningful **SAFE / VIOLATION** events.
@@ -354,39 +356,94 @@ This can help reduce false alerts caused by:
 
 # 📂 Data Strategy
 
-PetGuard separates data into two purposes.
+# 📂 Data Strategy
+
+PetGuard separates data into two purposes:
+
+1. validating the pretrained dog/cat detection baseline; and
+2. evaluating the complete PetGuard restricted-zone application.
 
 ## 1. Detection Baseline
 
-The Midterm uses pretrained YOLOv8n weights to validate dog/cat detection feasibility.
+The Midterm uses pretrained YOLOv8n COCO weights to validate dog/cat detection feasibility.
 
-## 2. PetGuard Evaluation Set
+The Midterm feasibility experiment uses four representative scenarios:
 
-The Final project will use a larger targeted evaluation set containing scenarios such as:
+- dog on couch;
+- cat on bed;
+- dog and cat together; and
+- room with no pet.
 
-- pet outside restricted zone;
-- pet inside restricted zone;
-- pet near zone boundary;
+These four images demonstrate technical feasibility but are not large enough to establish statistically meaningful real-world performance.
+
+---
+
+## 2. Final Evaluation Dataset
+
+For the Final project, PetGuard will expand evaluation to approximately **200 representative images or selected video frames** from three complementary sources.
+
+| Source | Target Size | Purpose |
+|---|---:|---|
+| [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/) | 100 (50 cats + 50 dogs) | Controlled dog/cat detection evaluation across different breeds, appearances, and poses |
+| [COCO 2017 Validation Dataset](https://cocodataset.org/#download) | 50 cat/dog scenes | Realistic detection evaluation with complex backgrounds, multiple objects, occlusion, and varied pet sizes |
+| PetGuard-Specific Data | 50 images/video frames | Application-level evaluation of restricted-zone SAFE / VIOLATION decisions |
+
+### Oxford-IIIT Pet Dataset
+
+Oxford-IIIT will provide a controlled set of different cat and dog breeds, appearances, sizes, and poses.
+
+Its primary purpose is to evaluate:
+
+- Pet Detection Recall; and
+- detection consistency across different pet appearances.
+
+### COCO 2017 Validation Dataset
+
+COCO will provide more realistic scenes where cats and dogs may appear with other objects and more complex backgrounds.
+
+It will support evaluation of:
+
+- Pet Detection Recall;
+- confidence behavior;
+- false or additional detections;
+- multiple-object scenes;
+- partial occlusion; and
+- small or distant pets.
+
+### PetGuard-Specific Data
+
+Approximately 50 team-collected images or selected video frames will test the complete PetGuard application under controlled restricted-zone scenarios.
+
+Planned scenarios include:
+
+- pet clearly outside a restricted zone;
+- pet clearly inside a restricted zone;
+- pet near a zone boundary;
 - partial occlusion;
-- different lighting;
+- poor or different lighting;
 - different viewing angles;
 - multiple pets;
 - small or distant pets; and
-- no pet present.
+- no-pet negative controls.
 
-The initial target is approximately:
+These samples will primarily evaluate:
 
-**100–200 representative images or evaluated video frames**
+- Zone Decision Accuracy;
+- False Violation Rate; and
+- processing performance.
 
-The objective is not simply to collect many easy pet photographs.
+Oxford-IIIT and COCO samples primarily evaluate the **pet-detection stage** and will normally use `expected_zone_status = N/A`.
 
-> **PetGuard will be evaluated using situations that challenge the application.**
+PetGuard-specific samples will evaluate the complete **SAFE / VIOLATION decision pipeline**.
 
-More information is available in:
+Because PetGuard is a Tier 1 application using pretrained YOLOv8n COCO weights, these datasets are primarily used for **evaluation rather than training a new object detector**.
 
-```text
-data/README.md
-```
+> **PetGuard will be evaluated using situations that challenge the application not only easy pet photographs.**
+
+More detailed data documentation is available in:
+
+`data/README.md`
+
 
 ---
 
@@ -462,9 +519,26 @@ Therefore, timing observed during the Midterm experiment is treated as a **basel
 
 ---
 
+# 🗓️ Course Milestone Plan
+
+The PetGuard development schedule follows the course Blueprint → Build structure while establishing a working baseline before expanding application features and evaluation.
+
+| Course Phase | PetGuard Goal | Milestone |
+|---|---|---|
+| 🧭 **Blueprint** | Define the problem, architecture, technical approach, data plan, success metrics, risks, and project scope | Midterm Blueprint submitted |
+| 🔌 **First Working Demo** | Run pretrained YOLO end-to-end and begin restricted-zone logic | Working dog/cat detection pipeline |
+| 🛠 **Make It Yours** | Add restricted-zone reasoning, video processing, temporal confirmation, alerts, and PetGuard-specific evaluation data | Complete application pipeline |
+| 📈 **Improve and Measure** | Evaluate Oxford-IIIT, COCO, and PetGuard-specific samples against the defined success metrics | Quantitative metrics recorded |
+| 🎥 **Package and Present** | Finalize the application, README, evaluation results, demo, and presentation | Final project submitted |
+
+The detailed technical roadmap below breaks these course milestones into PetGuard-specific development phases.
+
+
+---
+
 # 🚀 Development Roadmap
 
-## Phase 1 — Baseline ✅
+## Phase 1 - Baseline ✅
 
 ```text
 Image
@@ -478,7 +552,7 @@ Dog / Cat Detection
 
 ---
 
-## Phase 2 — Spatial Reasoning 🔄
+## Phase 2 - Spatial Reasoning 🔄
 
 ```text
 Pet Detection
@@ -490,7 +564,7 @@ SAFE / VIOLATION
 
 ---
 
-## Phase 3 — Video
+## Phase 3 - Video
 
 ```text
 Video
@@ -504,7 +578,7 @@ Zone Analysis
 
 ---
 
-## Phase 4 — Reliability
+## Phase 4 - Reliability
 
 Add:
 
@@ -514,7 +588,7 @@ Add:
 
 ---
 
-## Phase 5 — Evaluation
+## Phase 5 - Evaluation
 
 Test:
 
@@ -527,7 +601,7 @@ Test:
 
 ---
 
-## Phase 6 — Final Proof of Concept
+## Phase 6 - Final Proof of Concept
 
 ```text
 Video
@@ -692,6 +766,6 @@ These observations directly inform the next development stage.
 
 # 🎓 Course
 
-**ITAI 1378 — Computer Vision**
+**ITAI 1378 - Computer Vision**
 
 **Professor:** Patricia McManus
