@@ -1,0 +1,851 @@
+[
+  {
+    "sample_id": "1675",
+    "image_path": "data/downloads/coco/1675.jpg",
+    "objects": [
+      {
+        "class": "cat",
+        "bbox": [
+          0.0,
+          14.01,
+          640.0,
+          307.57
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "4795",
+    "image_path": "data/downloads/coco/4795.jpg",
+    "objects": [
+      {
+        "class": "cat",
+        "bbox": [
+          152.77,
+          113.55,
+          548.13,
+          477.94
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "7386",
+    "image_path": "data/downloads/coco/7386.jpg",
+    "objects": [
+      {
+        "class": "dog",
+        "bbox": [
+          180.91,
+          281.14,
+          219.31,
+          326.62
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "10363",
+    "image_path": "data/downloads/coco/10363.jpg",
+    "objects": [
+      {
+        "class": "cat",
+        "bbox": [
+          245.51,
+          108.3,
+          471.64,
+          243.98000000000002
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "14007",
+    "image_path": "data/downloads/coco/14007.jpg",
+    "objects": [
+      {
+        "class": "cat",
+        "bbox": [
+          340.25,
+          153.38,
+          416.88,
+          298.41999999999996
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "14831",
+    "image_path": "data/downloads/coco/14831.jpg",
+    "objects": [
+      {
+        "class": "cat",
+        "bbox": [
+          1.44,
+          232.99,
+          480.0,
+          638.56
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "15497",
+    "image_path": "data/downloads/coco/15497.jpg",
+    "objects": [
+      {
+        "class": "cat",
+        "bbox": [
+          32.36,
+          20.49,
+          484.31,
+          454.11
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "17029",
+    "image_path": "data/downloads/coco/17029.jpg",
+    "objects": [
+      {
+        "class": "dog",
+        "bbox": [
+          154.84,
+          105.81,
+          405.15999999999997,
+          541.94
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "18833",
+    "image_path": "data/downloads/coco/18833.jpg",
+    "objects": [
+      {
+        "class": "cat",
+        "bbox": [
+          186.67,
+          46.91,
+          507.37,
+          370.48
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "22192",
+    "image_path": "data/downloads/coco/22192.jpg",
+    "objects": [
+      {
+        "class": "dog",
+        "bbox": [
+          71.57,
+          120.67,
+          215.59,
+          375.93
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "22892",
+    "image_path": "data/downloads/coco/22892.jpg",
+    "objects": [
+      {
+        "class": "dog",
+        "bbox": [
+          35.62,
+          76.0,
+          288.96999999999997,
+          295.76
+        ]
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          237.75,
+          23.48,
+          499.2,
+          254.04999999999998
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "23272",
+    "image_path": "data/downloads/coco/23272.jpg",
+    "objects": [
+      {
+        "class": "cat",
+        "bbox": [
+          186.29,
+          73.39,
+          312.1,
+          145.97
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "25560",
+    "image_path": "data/downloads/coco/25560.jpg",
+    "objects": [
+      {
+        "class": "cat",
+        "bbox": [
+          133.45,
+          185.1,
+          510.0,
+          344.40999999999997
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "29393",
+    "image_path": "data/downloads/coco/29393.jpg",
+    "objects": [
+      {
+        "class": "dog",
+        "bbox": [
+          170.04,
+          157.52,
+          365.13,
+          341.22
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "30494",
+    "image_path": "data/downloads/coco/30494.jpg",
+    "objects": [
+      {
+        "class": "dog",
+        "bbox": [
+          106.67,
+          29.09,
+          286.06,
+          222.06
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "39769",
+    "image_path": "data/downloads/coco/39769.jpg",
+    "objects": [
+      {
+        "class": "cat",
+        "bbox": [
+          17.5,
+          54.38,
+          318.75,
+          469.38
+        ]
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          347.5,
+          25.63,
+          640.0,
+          369.38
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "46378",
+    "image_path": "data/downloads/coco/46378.jpg",
+    "objects": [
+      {
+        "class": "cat",
+        "bbox": [
+          2.31,
+          0.07,
+          609.76,
+          248.29999999999998
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "47121",
+    "image_path": "data/downloads/coco/47121.jpg",
+    "objects": [
+      {
+        "class": "cat",
+        "bbox": [
+          325.16,
+          71.23,
+          640.0,
+          393.29
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "49269",
+    "image_path": "data/downloads/coco/49269.jpg",
+    "objects": [
+      {
+        "class": "dog",
+        "bbox": [
+          6.48,
+          315.47,
+          275.95000000000005,
+          632.87
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "49810",
+    "image_path": "data/downloads/coco/49810.jpg",
+    "objects": [
+      {
+        "class": "cat",
+        "bbox": [
+          113.98,
+          141.33,
+          639.19,
+          424.0
+        ]
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          0.95,
+          181.03,
+          173.41,
+          419.24
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "51008",
+    "image_path": "data/downloads/coco/51008.jpg",
+    "objects": [
+      {
+        "class": "cat",
+        "bbox": [
+          0.0,
+          129.67,
+          402.78,
+          480.0
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "52891",
+    "image_path": "data/downloads/coco/52891.jpg",
+    "objects": [
+      {
+        "class": "dog",
+        "bbox": [
+          146.08,
+          125.33,
+          518.62,
+          427.0
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "53529",
+    "image_path": "data/downloads/coco/53529.jpg",
+    "objects": [
+      {
+        "class": "dog",
+        "bbox": [
+          140.32,
+          197.11,
+          247.74,
+          270.97
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "57760",
+    "image_path": "data/downloads/coco/57760.jpg",
+    "objects": [
+      {
+        "class": "dog",
+        "bbox": [
+          115.93,
+          233.22,
+          129.12,
+          241.39
+        ]
+      },
+      {
+        "class": "dog",
+        "bbox": [
+          452.8,
+          215.46,
+          458.40000000000003,
+          218.55
+        ]
+      },
+      {
+        "class": "dog",
+        "bbox": [
+          291.17,
+          211.0,
+          300.45,
+          215.96
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "58111",
+    "image_path": "data/downloads/coco/58111.jpg",
+    "objects": [
+      {
+        "class": "cat",
+        "bbox": [
+          32.74,
+          22.7,
+          494.22,
+          484.19
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "60835",
+    "image_path": "data/downloads/coco/60835.jpg",
+    "objects": [
+      {
+        "class": "dog",
+        "bbox": [
+          203.08,
+          44.21,
+          508.18000000000006,
+          425.09999999999997
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "61108",
+    "image_path": "data/downloads/coco/61108.jpg",
+    "objects": [
+      {
+        "class": "dog",
+        "bbox": [
+          136.73,
+          179.48,
+          251.07,
+          316.7
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "61333",
+    "image_path": "data/downloads/coco/61333.jpg",
+    "objects": [
+      {
+        "class": "cat",
+        "bbox": [
+          11.6,
+          101.52,
+          299.16,
+          317.2
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "61471",
+    "image_path": "data/downloads/coco/61471.jpg",
+    "objects": [
+      {
+        "class": "dog",
+        "bbox": [
+          272.1,
+          200.23,
+          424.07000000000005,
+          480.0
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "63552",
+    "image_path": "data/downloads/coco/63552.jpg",
+    "objects": [
+      {
+        "class": "cat",
+        "bbox": [
+          133.72,
+          18.48,
+          563.71,
+          453.72
+        ]
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          0.0,
+          282.47,
+          604.6,
+          586.0
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "64868",
+    "image_path": "data/downloads/coco/64868.jpg",
+    "objects": [
+      {
+        "class": "dog",
+        "bbox": [
+          179.21,
+          170.5,
+          343.24,
+          258.1
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "65485",
+    "image_path": "data/downloads/coco/65485.jpg",
+    "objects": [
+      {
+        "class": "dog",
+        "bbox": [
+          387.99,
+          97.43,
+          472.98,
+          178.72000000000003
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "67213",
+    "image_path": "data/downloads/coco/67213.jpg",
+    "objects": [
+      {
+        "class": "dog",
+        "bbox": [
+          402.7,
+          58.79,
+          600.62,
+          260.63
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "68078",
+    "image_path": "data/downloads/coco/68078.jpg",
+    "objects": [
+      {
+        "class": "dog",
+        "bbox": [
+          29.0,
+          492.01,
+          101.51,
+          626.74
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "71226",
+    "image_path": "data/downloads/coco/71226.jpg",
+    "objects": [
+      {
+        "class": "dog",
+        "bbox": [
+          187.13,
+          147.4,
+          528.62,
+          416.46000000000004
+        ]
+      },
+      {
+        "class": "dog",
+        "bbox": [
+          67.13,
+          53.57,
+          227.2,
+          217.09
+        ]
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          313.37,
+          58.66,
+          465.6,
+          129.94
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "72813",
+    "image_path": "data/downloads/coco/72813.jpg",
+    "objects": [
+      {
+        "class": "dog",
+        "bbox": [
+          228.8,
+          133.65,
+          496.62,
+          320.65
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "76417",
+    "image_path": "data/downloads/coco/76417.jpg",
+    "objects": [
+      {
+        "class": "dog",
+        "bbox": [
+          275.8,
+          143.12,
+          422.97,
+          306.21000000000004
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "77396",
+    "image_path": "data/downloads/coco/77396.jpg",
+    "objects": [
+      {
+        "class": "cat",
+        "bbox": [
+          230.73,
+          202.92,
+          393.48,
+          368.76
+        ]
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          92.9,
+          344.77,
+          264.26,
+          480.0
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "77595",
+    "image_path": "data/downloads/coco/77595.jpg",
+    "objects": [
+      {
+        "class": "cat",
+        "bbox": [
+          225.9,
+          84.71,
+          531.25,
+          404.41999999999996
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "78420",
+    "image_path": "data/downloads/coco/78420.jpg",
+    "objects": [
+      {
+        "class": "cat",
+        "bbox": [
+          289.65,
+          249.72,
+          639.24,
+          480.0
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "78426",
+    "image_path": "data/downloads/coco/78426.jpg",
+    "objects": [
+      {
+        "class": "cat",
+        "bbox": [
+          0.0,
+          64.42,
+          275.69,
+          319.24
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "78565",
+    "image_path": "data/downloads/coco/78565.jpg",
+    "objects": [
+      {
+        "class": "dog",
+        "bbox": [
+          201.78,
+          306.48,
+          232.99,
+          323.20000000000005
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "78823",
+    "image_path": "data/downloads/coco/78823.jpg",
+    "objects": [
+      {
+        "class": "dog",
+        "bbox": [
+          197.97,
+          117.22,
+          368.41999999999996,
+          339.28999999999996
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "79229",
+    "image_path": "data/downloads/coco/79229.jpg",
+    "objects": [
+      {
+        "class": "dog",
+        "bbox": [
+          108.44,
+          291.75,
+          201.38,
+          342.52
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "80153",
+    "image_path": "data/downloads/coco/80153.jpg",
+    "objects": [
+      {
+        "class": "dog",
+        "bbox": [
+          204.15,
+          358.8,
+          291.04,
+          538.88
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "80666",
+    "image_path": "data/downloads/coco/80666.jpg",
+    "objects": [
+      {
+        "class": "cat",
+        "bbox": [
+          64.83,
+          120.36,
+          534.49,
+          538.74
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "80949",
+    "image_path": "data/downloads/coco/80949.jpg",
+    "objects": [
+      {
+        "class": "cat",
+        "bbox": [
+          26.37,
+          129.99,
+          625.45,
+          365.47
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "81766",
+    "image_path": "data/downloads/coco/81766.jpg",
+    "objects": [
+      {
+        "class": "dog",
+        "bbox": [
+          472.45,
+          75.97,
+          601.5799999999999,
+          146.26
+        ]
+      },
+      {
+        "class": "dog",
+        "bbox": [
+          30.97,
+          126.39,
+          199.35,
+          249.29000000000002
+        ]
+      },
+      {
+        "class": "dog",
+        "bbox": [
+          230.98,
+          153.89,
+          495.42999999999995,
+          456.68
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "82807",
+    "image_path": "data/downloads/coco/82807.jpg",
+    "objects": [
+      {
+        "class": "dog",
+        "bbox": [
+          123.13,
+          74.06,
+          516.88,
+          478.79
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "84362",
+    "image_path": "data/downloads/coco/84362.jpg",
+    "objects": [
+      {
+        "class": "cat",
+        "bbox": [
+          260.54,
+          250.31,
+          555.08,
+          447.72
+        ]
+      }
+    ]
+  }
+]

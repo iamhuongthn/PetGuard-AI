@@ -1,0 +1,1102 @@
+[
+  {
+    "sample_id": "cat_00009",
+    "image_path": "data/downloads/oxford_selected/cat_00009.jpg",
+    "class": "cat",
+    "bbox": [
+      4.0,
+      26.0,
+      370.0,
+      468.0
+    ]
+  },
+  {
+    "sample_id": "cat_00012",
+    "image_path": "data/downloads/oxford_selected/cat_00012.jpg",
+    "class": "cat",
+    "bbox": [
+      2.0,
+      0.0,
+      366.0,
+      500.0
+    ]
+  },
+  {
+    "sample_id": "cat_00016",
+    "image_path": "data/downloads/oxford_selected/cat_00016.jpg",
+    "class": "cat",
+    "bbox": [
+      105.0,
+      69.0,
+      345.0,
+      422.0
+    ]
+  },
+  {
+    "sample_id": "cat_00020",
+    "image_path": "data/downloads/oxford_selected/cat_00020.jpg",
+    "class": "cat",
+    "bbox": [
+      53.0,
+      32.0,
+      481.0,
+      553.0
+    ]
+  },
+  {
+    "sample_id": "cat_00024",
+    "image_path": "data/downloads/oxford_selected/cat_00024.jpg",
+    "class": "cat",
+    "bbox": [
+      39.0,
+      16.0,
+      376.0,
+      484.0
+    ]
+  },
+  {
+    "sample_id": "cat_00025",
+    "image_path": "data/downloads/oxford_selected/cat_00025.jpg",
+    "class": "cat",
+    "bbox": [
+      158.0,
+      41.0,
+      200.0,
+      253.0
+    ]
+  },
+  {
+    "sample_id": "cat_00026",
+    "image_path": "data/downloads/oxford_selected/cat_00026.jpg",
+    "class": "cat",
+    "bbox": [
+      126.0,
+      19.0,
+      213.0,
+      283.0
+    ]
+  },
+  {
+    "sample_id": "cat_00029",
+    "image_path": "data/downloads/oxford_selected/cat_00029.jpg",
+    "class": "cat",
+    "bbox": [
+      95.0,
+      3.0,
+      309.0,
+      331.0
+    ]
+  },
+  {
+    "sample_id": "cat_00036",
+    "image_path": "data/downloads/oxford_selected/cat_00036.jpg",
+    "class": "cat",
+    "bbox": [
+      0.0,
+      5.0,
+      292.0,
+      220.0
+    ]
+  },
+  {
+    "sample_id": "cat_00041",
+    "image_path": "data/downloads/oxford_selected/cat_00041.jpg",
+    "class": "cat",
+    "bbox": [
+      2.0,
+      49.0,
+      351.0,
+      292.0
+    ]
+  },
+  {
+    "sample_id": "cat_00042",
+    "image_path": "data/downloads/oxford_selected/cat_00042.jpg",
+    "class": "cat",
+    "bbox": [
+      66.0,
+      37.0,
+      189.0,
+      446.0
+    ]
+  },
+  {
+    "sample_id": "cat_00045",
+    "image_path": "data/downloads/oxford_selected/cat_00045.jpg",
+    "class": "cat",
+    "bbox": [
+      117.0,
+      1.0,
+      382.0,
+      242.0
+    ]
+  },
+  {
+    "sample_id": "cat_00047",
+    "image_path": "data/downloads/oxford_selected/cat_00047.jpg",
+    "class": "cat",
+    "bbox": [
+      1.0,
+      164.0,
+      271.0,
+      275.0
+    ]
+  },
+  {
+    "sample_id": "cat_00049",
+    "image_path": "data/downloads/oxford_selected/cat_00049.jpg",
+    "class": "cat",
+    "bbox": [
+      75.0,
+      24.0,
+      352.0,
+      476.0
+    ]
+  },
+  {
+    "sample_id": "cat_00052",
+    "image_path": "data/downloads/oxford_selected/cat_00052.jpg",
+    "class": "cat",
+    "bbox": [
+      8.0,
+      12.0,
+      514.0,
+      422.0
+    ]
+  },
+  {
+    "sample_id": "cat_00053",
+    "image_path": "data/downloads/oxford_selected/cat_00053.jpg",
+    "class": "cat",
+    "bbox": [
+      81.0,
+      9.0,
+      391.0,
+      304.0
+    ]
+  },
+  {
+    "sample_id": "cat_00056",
+    "image_path": "data/downloads/oxford_selected/cat_00056.jpg",
+    "class": "cat",
+    "bbox": [
+      11.0,
+      26.0,
+      320.0,
+      410.0
+    ]
+  },
+  {
+    "sample_id": "cat_00058",
+    "image_path": "data/downloads/oxford_selected/cat_00058.jpg",
+    "class": "cat",
+    "bbox": [
+      89.0,
+      19.0,
+      411.0,
+      312.0
+    ]
+  },
+  {
+    "sample_id": "cat_00061",
+    "image_path": "data/downloads/oxford_selected/cat_00061.jpg",
+    "class": "cat",
+    "bbox": [
+      14.0,
+      1.0,
+      411.0,
+      371.0
+    ]
+  },
+  {
+    "sample_id": "cat_00063",
+    "image_path": "data/downloads/oxford_selected/cat_00063.jpg",
+    "class": "cat",
+    "bbox": [
+      32.0,
+      16.0,
+      260.0,
+      196.0
+    ]
+  },
+  {
+    "sample_id": "cat_00075",
+    "image_path": "data/downloads/oxford_selected/cat_00075.jpg",
+    "class": "cat",
+    "bbox": [
+      5.0,
+      97.0,
+      362.0,
+      402.0
+    ]
+  },
+  {
+    "sample_id": "cat_00076",
+    "image_path": "data/downloads/oxford_selected/cat_00076.jpg",
+    "class": "cat",
+    "bbox": [
+      117.0,
+      62.0,
+      383.0,
+      216.0
+    ]
+  },
+  {
+    "sample_id": "cat_00077",
+    "image_path": "data/downloads/oxford_selected/cat_00077.jpg",
+    "class": "cat",
+    "bbox": [
+      3.0,
+      224.0,
+      329.0,
+      276.0
+    ]
+  },
+  {
+    "sample_id": "cat_00081",
+    "image_path": "data/downloads/oxford_selected/cat_00081.jpg",
+    "class": "cat",
+    "bbox": [
+      174.0,
+      110.0,
+      259.0,
+      738.0
+    ]
+  },
+  {
+    "sample_id": "cat_00082",
+    "image_path": "data/downloads/oxford_selected/cat_00082.jpg",
+    "class": "cat",
+    "bbox": [
+      151.0,
+      15.0,
+      208.0,
+      316.0
+    ]
+  },
+  {
+    "sample_id": "cat_00083",
+    "image_path": "data/downloads/oxford_selected/cat_00083.jpg",
+    "class": "cat",
+    "bbox": [
+      47.0,
+      235.0,
+      448.0,
+      265.0
+    ]
+  },
+  {
+    "sample_id": "cat_00087",
+    "image_path": "data/downloads/oxford_selected/cat_00087.jpg",
+    "class": "cat",
+    "bbox": [
+      78.0,
+      43.0,
+      238.0,
+      318.0
+    ]
+  },
+  {
+    "sample_id": "cat_00091",
+    "image_path": "data/downloads/oxford_selected/cat_00091.jpg",
+    "class": "cat",
+    "bbox": [
+      32.0,
+      2.0,
+      451.0,
+      329.0
+    ]
+  },
+  {
+    "sample_id": "cat_00093",
+    "image_path": "data/downloads/oxford_selected/cat_00093.jpg",
+    "class": "cat",
+    "bbox": [
+      36.0,
+      36.0,
+      464.0,
+      337.0
+    ]
+  },
+  {
+    "sample_id": "cat_00096",
+    "image_path": "data/downloads/oxford_selected/cat_00096.jpg",
+    "class": "cat",
+    "bbox": [
+      49.0,
+      50.0,
+      348.0,
+      284.0
+    ]
+  },
+  {
+    "sample_id": "cat_00097",
+    "image_path": "data/downloads/oxford_selected/cat_00097.jpg",
+    "class": "cat",
+    "bbox": [
+      8.0,
+      0.0,
+      491.0,
+      332.0
+    ]
+  },
+  {
+    "sample_id": "cat_00099",
+    "image_path": "data/downloads/oxford_selected/cat_00099.jpg",
+    "class": "cat",
+    "bbox": [
+      1.0,
+      3.0,
+      330.0,
+      497.0
+    ]
+  },
+  {
+    "sample_id": "cat_00107",
+    "image_path": "data/downloads/oxford_selected/cat_00107.jpg",
+    "class": "cat",
+    "bbox": [
+      19.0,
+      14.0,
+      455.0,
+      351.0
+    ]
+  },
+  {
+    "sample_id": "cat_00108",
+    "image_path": "data/downloads/oxford_selected/cat_00108.jpg",
+    "class": "cat",
+    "bbox": [
+      3.0,
+      122.0,
+      329.0,
+      377.0
+    ]
+  },
+  {
+    "sample_id": "cat_00111",
+    "image_path": "data/downloads/oxford_selected/cat_00111.jpg",
+    "class": "cat",
+    "bbox": [
+      94.0,
+      100.0,
+      229.0,
+      358.0
+    ]
+  },
+  {
+    "sample_id": "cat_00112",
+    "image_path": "data/downloads/oxford_selected/cat_00112.jpg",
+    "class": "cat",
+    "bbox": [
+      0.0,
+      1.0,
+      351.0,
+      374.0
+    ]
+  },
+  {
+    "sample_id": "cat_00114",
+    "image_path": "data/downloads/oxford_selected/cat_00114.jpg",
+    "class": "cat",
+    "bbox": [
+      2.0,
+      58.0,
+      373.0,
+      442.0
+    ]
+  },
+  {
+    "sample_id": "cat_00121",
+    "image_path": "data/downloads/oxford_selected/cat_00121.jpg",
+    "class": "cat",
+    "bbox": [
+      29.0,
+      13.0,
+      438.0,
+      306.0
+    ]
+  },
+  {
+    "sample_id": "cat_00122",
+    "image_path": "data/downloads/oxford_selected/cat_00122.jpg",
+    "class": "cat",
+    "bbox": [
+      5.0,
+      7.0,
+      235.0,
+      371.0
+    ]
+  },
+  {
+    "sample_id": "cat_00125",
+    "image_path": "data/downloads/oxford_selected/cat_00125.jpg",
+    "class": "cat",
+    "bbox": [
+      113.0,
+      62.0,
+      219.0,
+      424.0
+    ]
+  },
+  {
+    "sample_id": "cat_00127",
+    "image_path": "data/downloads/oxford_selected/cat_00127.jpg",
+    "class": "cat",
+    "bbox": [
+      123.0,
+      31.0,
+      173.0,
+      220.0
+    ]
+  },
+  {
+    "sample_id": "cat_00129",
+    "image_path": "data/downloads/oxford_selected/cat_00129.jpg",
+    "class": "cat",
+    "bbox": [
+      8.0,
+      3.0,
+      392.0,
+      260.0
+    ]
+  },
+  {
+    "sample_id": "cat_00131",
+    "image_path": "data/downloads/oxford_selected/cat_00131.jpg",
+    "class": "cat",
+    "bbox": [
+      127.0,
+      59.0,
+      305.0,
+      213.0
+    ]
+  },
+  {
+    "sample_id": "cat_00132",
+    "image_path": "data/downloads/oxford_selected/cat_00132.jpg",
+    "class": "cat",
+    "bbox": [
+      138.0,
+      10.0,
+      319.0,
+      321.0
+    ]
+  },
+  {
+    "sample_id": "cat_00136",
+    "image_path": "data/downloads/oxford_selected/cat_00136.jpg",
+    "class": "cat",
+    "bbox": [
+      18.0,
+      21.0,
+      455.0,
+      466.0
+    ]
+  },
+  {
+    "sample_id": "cat_00139",
+    "image_path": "data/downloads/oxford_selected/cat_00139.jpg",
+    "class": "cat",
+    "bbox": [
+      118.0,
+      131.0,
+      173.0,
+      216.0
+    ]
+  },
+  {
+    "sample_id": "cat_00141",
+    "image_path": "data/downloads/oxford_selected/cat_00141.jpg",
+    "class": "cat",
+    "bbox": [
+      14.0,
+      11.0,
+      199.0,
+      249.0
+    ]
+  },
+  {
+    "sample_id": "cat_00148",
+    "image_path": "data/downloads/oxford_selected/cat_00148.jpg",
+    "class": "cat",
+    "bbox": [
+      16.0,
+      45.0,
+      447.0,
+      303.0
+    ]
+  },
+  {
+    "sample_id": "cat_00152",
+    "image_path": "data/downloads/oxford_selected/cat_00152.jpg",
+    "class": "cat",
+    "bbox": [
+      25.0,
+      36.0,
+      328.0,
+      416.0
+    ]
+  },
+  {
+    "sample_id": "cat_00154",
+    "image_path": "data/downloads/oxford_selected/cat_00154.jpg",
+    "class": "cat",
+    "bbox": [
+      43.0,
+      38.0,
+      309.0,
+      116.0
+    ]
+  },
+  {
+    "sample_id": "dog_00000",
+    "image_path": "data/downloads/oxford_selected/dog_00000.jpg",
+    "class": "dog",
+    "bbox": [
+      136.0,
+      38.0,
+      239.0,
+      296.0
+    ]
+  },
+  {
+    "sample_id": "dog_00001",
+    "image_path": "data/downloads/oxford_selected/dog_00001.jpg",
+    "class": "dog",
+    "bbox": [
+      188.0,
+      80.0,
+      312.0,
+      253.0
+    ]
+  },
+  {
+    "sample_id": "dog_00003",
+    "image_path": "data/downloads/oxford_selected/dog_00003.jpg",
+    "class": "dog",
+    "bbox": [
+      5.0,
+      73.0,
+      477.0,
+      268.0
+    ]
+  },
+  {
+    "sample_id": "dog_00004",
+    "image_path": "data/downloads/oxford_selected/dog_00004.jpg",
+    "class": "dog",
+    "bbox": [
+      102.0,
+      14.0,
+      310.0,
+      317.0
+    ]
+  },
+  {
+    "sample_id": "dog_00005",
+    "image_path": "data/downloads/oxford_selected/dog_00005.jpg",
+    "class": "dog",
+    "bbox": [
+      55.0,
+      50.0,
+      168.0,
+      256.0
+    ]
+  },
+  {
+    "sample_id": "dog_00006",
+    "image_path": "data/downloads/oxford_selected/dog_00006.jpg",
+    "class": "dog",
+    "bbox": [
+      152.0,
+      14.0,
+      195.0,
+      351.0
+    ]
+  },
+  {
+    "sample_id": "dog_00008",
+    "image_path": "data/downloads/oxford_selected/dog_00008.jpg",
+    "class": "dog",
+    "bbox": [
+      2.0,
+      0.0,
+      372.0,
+      500.0
+    ]
+  },
+  {
+    "sample_id": "dog_00010",
+    "image_path": "data/downloads/oxford_selected/dog_00010.jpg",
+    "class": "dog",
+    "bbox": [
+      68.0,
+      55.0,
+      212.0,
+      385.0
+    ]
+  },
+  {
+    "sample_id": "dog_00013",
+    "image_path": "data/downloads/oxford_selected/dog_00013.jpg",
+    "class": "dog",
+    "bbox": [
+      114.0,
+      35.0,
+      315.0,
+      371.0
+    ]
+  },
+  {
+    "sample_id": "dog_00014",
+    "image_path": "data/downloads/oxford_selected/dog_00014.jpg",
+    "class": "dog",
+    "bbox": [
+      61.0,
+      66.0,
+      284.0,
+      434.0
+    ]
+  },
+  {
+    "sample_id": "dog_00017",
+    "image_path": "data/downloads/oxford_selected/dog_00017.jpg",
+    "class": "dog",
+    "bbox": [
+      51.0,
+      1.0,
+      445.0,
+      331.0
+    ]
+  },
+  {
+    "sample_id": "dog_00018",
+    "image_path": "data/downloads/oxford_selected/dog_00018.jpg",
+    "class": "dog",
+    "bbox": [
+      118.0,
+      132.0,
+      211.0,
+      238.0
+    ]
+  },
+  {
+    "sample_id": "dog_00019",
+    "image_path": "data/downloads/oxford_selected/dog_00019.jpg",
+    "class": "dog",
+    "bbox": [
+      3.0,
+      0.0,
+      354.0,
+      499.0
+    ]
+  },
+  {
+    "sample_id": "dog_00021",
+    "image_path": "data/downloads/oxford_selected/dog_00021.jpg",
+    "class": "dog",
+    "bbox": [
+      30.0,
+      4.0,
+      248.0,
+      328.0
+    ]
+  },
+  {
+    "sample_id": "dog_00022",
+    "image_path": "data/downloads/oxford_selected/dog_00022.jpg",
+    "class": "dog",
+    "bbox": [
+      6.0,
+      17.0,
+      367.0,
+      316.0
+    ]
+  },
+  {
+    "sample_id": "dog_00023",
+    "image_path": "data/downloads/oxford_selected/dog_00023.jpg",
+    "class": "dog",
+    "bbox": [
+      112.0,
+      84.0,
+      254.0,
+      217.0
+    ]
+  },
+  {
+    "sample_id": "dog_00027",
+    "image_path": "data/downloads/oxford_selected/dog_00027.jpg",
+    "class": "dog",
+    "bbox": [
+      4.0,
+      128.0,
+      367.0,
+      145.0
+    ]
+  },
+  {
+    "sample_id": "dog_00028",
+    "image_path": "data/downloads/oxford_selected/dog_00028.jpg",
+    "class": "dog",
+    "bbox": [
+      55.0,
+      85.0,
+      427.0,
+      409.0
+    ]
+  },
+  {
+    "sample_id": "dog_00031",
+    "image_path": "data/downloads/oxford_selected/dog_00031.jpg",
+    "class": "dog",
+    "bbox": [
+      87.0,
+      64.0,
+      205.0,
+      375.0
+    ]
+  },
+  {
+    "sample_id": "dog_00032",
+    "image_path": "data/downloads/oxford_selected/dog_00032.jpg",
+    "class": "dog",
+    "bbox": [
+      30.0,
+      23.0,
+      253.0,
+      475.0
+    ]
+  },
+  {
+    "sample_id": "dog_00033",
+    "image_path": "data/downloads/oxford_selected/dog_00033.jpg",
+    "class": "dog",
+    "bbox": [
+      26.0,
+      21.0,
+      472.0,
+      308.0
+    ]
+  },
+  {
+    "sample_id": "dog_00034",
+    "image_path": "data/downloads/oxford_selected/dog_00034.jpg",
+    "class": "dog",
+    "bbox": [
+      23.0,
+      0.0,
+      454.0,
+      331.0
+    ]
+  },
+  {
+    "sample_id": "dog_00035",
+    "image_path": "data/downloads/oxford_selected/dog_00035.jpg",
+    "class": "dog",
+    "bbox": [
+      171.0,
+      5.0,
+      259.0,
+      274.0
+    ]
+  },
+  {
+    "sample_id": "dog_00037",
+    "image_path": "data/downloads/oxford_selected/dog_00037.jpg",
+    "class": "dog",
+    "bbox": [
+      43.0,
+      172.0,
+      220.0,
+      294.0
+    ]
+  },
+  {
+    "sample_id": "dog_00038",
+    "image_path": "data/downloads/oxford_selected/dog_00038.jpg",
+    "class": "dog",
+    "bbox": [
+      89.0,
+      34.0,
+      252.0,
+      298.0
+    ]
+  },
+  {
+    "sample_id": "dog_00040",
+    "image_path": "data/downloads/oxford_selected/dog_00040.jpg",
+    "class": "dog",
+    "bbox": [
+      150.0,
+      10.0,
+      350.0,
+      324.0
+    ]
+  },
+  {
+    "sample_id": "dog_00043",
+    "image_path": "data/downloads/oxford_selected/dog_00043.jpg",
+    "class": "dog",
+    "bbox": [
+      0.0,
+      1.0,
+      388.0,
+      374.0
+    ]
+  },
+  {
+    "sample_id": "dog_00046",
+    "image_path": "data/downloads/oxford_selected/dog_00046.jpg",
+    "class": "dog",
+    "bbox": [
+      12.0,
+      34.0,
+      319.0,
+      380.0
+    ]
+  },
+  {
+    "sample_id": "dog_00048",
+    "image_path": "data/downloads/oxford_selected/dog_00048.jpg",
+    "class": "dog",
+    "bbox": [
+      94.0,
+      56.0,
+      236.0,
+      225.0
+    ]
+  },
+  {
+    "sample_id": "dog_00050",
+    "image_path": "data/downloads/oxford_selected/dog_00050.jpg",
+    "class": "dog",
+    "bbox": [
+      75.0,
+      41.0,
+      281.0,
+      291.0
+    ]
+  },
+  {
+    "sample_id": "dog_00057",
+    "image_path": "data/downloads/oxford_selected/dog_00057.jpg",
+    "class": "dog",
+    "bbox": [
+      65.0,
+      28.0,
+      348.0,
+      273.0
+    ]
+  },
+  {
+    "sample_id": "dog_00060",
+    "image_path": "data/downloads/oxford_selected/dog_00060.jpg",
+    "class": "dog",
+    "bbox": [
+      27.0,
+      31.0,
+      472.0,
+      364.0
+    ]
+  },
+  {
+    "sample_id": "dog_00062",
+    "image_path": "data/downloads/oxford_selected/dog_00062.jpg",
+    "class": "dog",
+    "bbox": [
+      0.0,
+      31.0,
+      416.0,
+      343.0
+    ]
+  },
+  {
+    "sample_id": "dog_00065",
+    "image_path": "data/downloads/oxford_selected/dog_00065.jpg",
+    "class": "dog",
+    "bbox": [
+      23.0,
+      66.0,
+      284.0,
+      422.0
+    ]
+  },
+  {
+    "sample_id": "dog_00066",
+    "image_path": "data/downloads/oxford_selected/dog_00066.jpg",
+    "class": "dog",
+    "bbox": [
+      78.0,
+      26.0,
+      422.0,
+      308.0
+    ]
+  },
+  {
+    "sample_id": "dog_00067",
+    "image_path": "data/downloads/oxford_selected/dog_00067.jpg",
+    "class": "dog",
+    "bbox": [
+      0.0,
+      2.0,
+      421.0,
+      330.0
+    ]
+  },
+  {
+    "sample_id": "dog_00068",
+    "image_path": "data/downloads/oxford_selected/dog_00068.jpg",
+    "class": "dog",
+    "bbox": [
+      158.0,
+      21.0,
+      176.0,
+      337.0
+    ]
+  },
+  {
+    "sample_id": "dog_00071",
+    "image_path": "data/downloads/oxford_selected/dog_00071.jpg",
+    "class": "dog",
+    "bbox": [
+      100.0,
+      35.0,
+      235.0,
+      304.0
+    ]
+  },
+  {
+    "sample_id": "dog_00072",
+    "image_path": "data/downloads/oxford_selected/dog_00072.jpg",
+    "class": "dog",
+    "bbox": [
+      97.0,
+      4.0,
+      359.0,
+      328.0
+    ]
+  },
+  {
+    "sample_id": "dog_00073",
+    "image_path": "data/downloads/oxford_selected/dog_00073.jpg",
+    "class": "dog",
+    "bbox": [
+      102.0,
+      37.0,
+      260.0,
+      272.0
+    ]
+  },
+  {
+    "sample_id": "dog_00078",
+    "image_path": "data/downloads/oxford_selected/dog_00078.jpg",
+    "class": "dog",
+    "bbox": [
+      16.0,
+      1.0,
+      484.0,
+      331.0
+    ]
+  },
+  {
+    "sample_id": "dog_00079",
+    "image_path": "data/downloads/oxford_selected/dog_00079.jpg",
+    "class": "dog",
+    "bbox": [
+      20.0,
+      36.0,
+      349.0,
+      332.0
+    ]
+  },
+  {
+    "sample_id": "dog_00080",
+    "image_path": "data/downloads/oxford_selected/dog_00080.jpg",
+    "class": "dog",
+    "bbox": [
+      7.0,
+      3.0,
+      326.0,
+      445.0
+    ]
+  },
+  {
+    "sample_id": "dog_00086",
+    "image_path": "data/downloads/oxford_selected/dog_00086.jpg",
+    "class": "dog",
+    "bbox": [
+      88.0,
+      98.0,
+      174.0,
+      280.0
+    ]
+  },
+  {
+    "sample_id": "dog_00088",
+    "image_path": "data/downloads/oxford_selected/dog_00088.jpg",
+    "class": "dog",
+    "bbox": [
+      0.0,
+      14.0,
+      316.0,
+      436.0
+    ]
+  },
+  {
+    "sample_id": "dog_00089",
+    "image_path": "data/downloads/oxford_selected/dog_00089.jpg",
+    "class": "dog",
+    "bbox": [
+      78.0,
+      68.0,
+      241.0,
+      312.0
+    ]
+  },
+  {
+    "sample_id": "dog_00094",
+    "image_path": "data/downloads/oxford_selected/dog_00094.jpg",
+    "class": "dog",
+    "bbox": [
+      57.0,
+      3.0,
+      298.0,
+      370.0
+    ]
+  },
+  {
+    "sample_id": "dog_00098",
+    "image_path": "data/downloads/oxford_selected/dog_00098.jpg",
+    "class": "dog",
+    "bbox": [
+      0.0,
+      113.0,
+      426.0,
+      173.0
+    ]
+  },
+  {
+    "sample_id": "dog_00100",
+    "image_path": "data/downloads/oxford_selected/dog_00100.jpg",
+    "class": "dog",
+    "bbox": [
+      53.0,
+      50.0,
+      184.0,
+      206.0
+    ]
+  },
+  {
+    "sample_id": "dog_00101",
+    "image_path": "data/downloads/oxford_selected/dog_00101.jpg",
+    "class": "dog",
+    "bbox": [
+      3.0,
+      32.0,
+      383.0,
+      343.0
+    ]
+  }
+]
