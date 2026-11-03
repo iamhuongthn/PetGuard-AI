@@ -210,7 +210,20 @@ def build_app():
         status = gr.Textbox(label="Setup / processing status", interactive=False,
                             value="Upload a video to start.")
         process_button = gr.Button("▶ Process Video", variant="primary")
-        result_video = gr.Video(label="Annotated output")
+        # Keep the output video compact and centered; the source aspect ratio is preserved.
+        with gr.Row():
+            with gr.Column(scale=1, min_width=80):
+                pass
+            with gr.Column(scale=3, min_width=400):
+                result_video = gr.Video(
+                    label="Annotated Output",
+                    width=750,
+                    height=420,
+                    show_download_button=True,
+                    interactive=False,
+                )
+            with gr.Column(scale=1, min_width=80):
+                pass
         with gr.Row():
             events_file = gr.File(label="Download event CSV")
             predictions_file = gr.File(label="Download frame predictions CSV")
