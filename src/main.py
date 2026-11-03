@@ -1,4 +1,5 @@
 from pathlib import Path
+import json
 import time
 import cv2
 import numpy as np
@@ -20,6 +21,7 @@ def process_video(input_path, output_path, event_csv, polygon,
     state=TemporalConfirm(confirm_frames)
     output_path=Path(output_path);output_path.parent.mkdir(parents=True,exist_ok=True)
     writer=None; frame_idx=0;events=[];predictions=[];timings=[]
+    wall_start=time.perf_counter()
     zone=np.asarray(polygon,dtype=np.int32)
     try:
         while True:
@@ -44,9 +46,17 @@ def process_video(input_path, output_path, event_csv, polygon,
                                'video_seconds':round(frame_idx/fps,3),'pet_class':pick['class'],
                                'confidence':round(pick['confidence'],4),'event':'VIOLATION'})
             timings.append((time.perf_counter()-start)*1000)
-            predictions.append({'frame':frame_idx,'seconds':round(frame_idx/fps,3),
-                                'pet_count':len(checked),'candidate_violation':bool(candidates),
-                                'confirmed_violation':bool(active),'new_event':new_event})
+            # Persist box-level predictions for object matching and false-positive analysis.
+            predictions.append({
+                'frame': frame_idx,
+                'seconds': round(frame_idx/fps, 3),
+                'pet_count': len(checked),
+                'detections': json.dumps(checked),
+                'candidate_violation': bool(candidates),
+                'confirmed_violation': bool(active),
+                'new_event': bool(new_event),
+                'processing_ms': round(timings[-1], 3),
+            })
             cv2.polylines(frame,[zone],True,(0,0,255),2)
             cv2.putText(frame,'RESTRICTED ZONE',(int(zone[:,0].min()), max(22,int(zone[:,1].min())-8)),
                         cv2.FONT_HERSHEY_SIMPLEX,0.7,(0,0,255),2)
@@ -67,5 +77,16 @@ def process_video(input_path, output_path, event_csv, polygon,
     write_events(events,event_csv)
     pred_path=Path(event_csv).with_name('frame_predictions.csv')
     pd.DataFrame(predictions).to_csv(pred_path,index=False)
-    return {'frames':frame_idx,'events':len(events),'avg_ms':round(float(np.mean(timings)),2) if timings else None,
-            'output':str(output_path),'csv':str(event_csv),'predictions_csv':str(pred_path)}
+    elapsed = time.perf_counter() - wall_start
+    mean_ms = float(np.mean(timings)) if timings else None
+    # Mean/P95 exclude decoding and encoding; throughput includes the full run.
+    return {
+        'frames': frame_idx, 'events': len(events),
+        'avg_ms': round(mean_ms, 2) if mean_ms is not None else None,
+        'p95_ms': round(float(np.percentile(timings, 95)), 2) if timings else None,
+        'processing_fps': round(1000 / mean_ms, 2) if mean_ms and mean_ms > 0 else None,
+        'wall_seconds': round(elapsed, 2),
+        'end_to_end_fps': round(frame_idx / elapsed, 2) if elapsed > 0 else None,
+        'output': str(output_path), 'csv': str(event_csv),
+        'predictions_csv': str(pred_path),
+    }

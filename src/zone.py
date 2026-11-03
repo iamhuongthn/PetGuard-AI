@@ -6,11 +6,13 @@ def resize_frame(frame, width=960):
     return cv2.resize(frame,(int(width),round(h*width/w)))
 
 def point_inside(bbox, polygon):
+    """Floor region: test bottom-center of pet box in image coordinates."""
     x1,y1,x2,y2=bbox
     p=((x1+x2)/2,y2)
     return cv2.pointPolygonTest(np.asarray(polygon,dtype=np.int32),p,False)>=0
 
 def overlap_fraction(bbox, polygon, shape):
+    """Furniture region: 2D pet-box overlap, not physical occupancy proof."""
     h,w=shape[:2]
     x1,y1,x2,y2=map(int,bbox)
     x1=max(0,min(w,x1));x2=max(0,min(w,x2));y1=max(0,min(h,y1));y2=max(0,min(h,y2))

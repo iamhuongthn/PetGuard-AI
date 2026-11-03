@@ -1,7 +1,6 @@
 """PetGuard Gradio UI: configure, confirm, process, edit and reprocess without rerunning cells."""
 from __future__ import annotations
 import json
-import shutil
 import subprocess
 import uuid
 from pathlib import Path
@@ -178,14 +177,14 @@ def run_processing(state, progress=gr.Progress()):
         command = ["ffmpeg", "-y", "-loglevel", "error", "-i", str(output),
                    "-c:v", "libx264", "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(browser_mp4)]
         subprocess.run(command, check=True, capture_output=True, text=True)
-        events = pd.read_csv(csv_path)
         state = dict(state)
         state["result_revision"] = state["revision"]
         progress(1.0, desc="Complete")
         return (state, str(browser_mp4), str(csv_path),
                 str(summary["predictions_csv"]),
                 f"Completed {summary['frames']} frames; {summary['events']} predicted events; "
-                f"average {summary['avg_ms']} ms/frame. Run ID: {run_id}. "
+                f"average {summary['avg_ms']} ms/frame; P95 {summary['p95_ms']} ms; "
+                f"end-to-end {summary['end_to_end_fps']} FPS. Run ID: {run_id}. "
                 "Verify alerts against ground truth.")
     except Exception as e:
         return state, None, None, None, f"Processing failed: {type(e).__name__}: {e}"

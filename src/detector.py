@@ -1,6 +1,10 @@
 from ultralytics import YOLO
 
 class PetDetector:
+    """Return pretrained cat/dog detections (COCO classes 15/16).
+
+    A high-confidence prediction is not ground truth. Zone logic lives elsewhere.
+    """
     def __init__(self, weights='yolov8s.pt', confidence=0.35, imgsz=960):
         self.model = YOLO(weights)
         self.confidence = float(confidence)

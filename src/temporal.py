@@ -1,5 +1,5 @@
 class TemporalConfirm:
-    """Scene-level confirmation for one monitored zone; not per-pet tracking."""
+    """Scene-level consecutive-frame confirmation; not individual-pet tracking."""
     def __init__(self, frames_required=5, clear_frames=5):
         self.frames_required=frames_required
         self.clear_frames=clear_frames
