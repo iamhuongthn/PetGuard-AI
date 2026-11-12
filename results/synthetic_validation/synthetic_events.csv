@@ -1,0 +1,2 @@
+source,frame,video_seconds,pet_class,confidence,event
+synthetic_input.mp4,12,1.2,dog,0.99,VIOLATION

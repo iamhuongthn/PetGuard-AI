@@ -5,7 +5,7 @@ import cv2
 import numpy as np
 import pandas as pd
 from .detector import PetDetector
-from .zone import resize_frame,is_violation
+from .zone import resize_frame,is_violation,validate_polygon
 from .temporal import TemporalConfirm
 from .event_logger import write_events
 
@@ -13,6 +13,7 @@ def process_video(input_path, output_path, event_csv, polygon,
                   weights='yolov8s.pt', target_width=960,
                   confidence=0.35, imgsz=960, mode='floor',
                   overlap_threshold=0.2, confirm_frames=5):
+    validate_polygon(polygon)
     cap=cv2.VideoCapture(str(input_path))
     if not cap.isOpened():raise ValueError(f'Cannot open video: {input_path}')
     fps=float(cap.get(cv2.CAP_PROP_FPS))
@@ -47,10 +48,15 @@ def process_video(input_path, output_path, event_csv, polygon,
                                'confidence':round(pick['confidence'],4),'event':'VIOLATION'})
             timings.append((time.perf_counter()-start)*1000)
             # Persist box-level predictions for object matching and false-positive analysis.
+            status = ("CONFIRMED VIOLATION" if active and candidates else
+                      "RECENT VIOLATION - CLEARING" if active else
+                      "PENDING - VERIFYING" if candidates else
+                      "SAFE - PET OUTSIDE ZONE" if checked else "NO PET DETECTED")
             predictions.append({
                 'frame': frame_idx,
                 'seconds': round(frame_idx/fps, 3),
                 'pet_count': len(checked),
+                'status': status,
                 'detections': json.dumps(checked),
                 'candidate_violation': bool(candidates),
                 'confirmed_violation': bool(active),
@@ -66,9 +72,8 @@ def process_video(input_path, output_path, event_csv, polygon,
                 cv2.rectangle(frame,(x1,y1),(x2,y2),color,2)
                 cv2.putText(frame,f"{d['class']} {d['confidence']:.2f}",(x1,max(20,y1-7)),
                             cv2.FONT_HERSHEY_SIMPLEX,0.65,color,2)
-            status='CONFIRMED VIOLATION' if active else ('PENDING' if candidates else 'SAFE / NO PET')
             cv2.putText(frame,status,(15,34),cv2.FONT_HERSHEY_SIMPLEX,0.85,
-                        (0,0,255) if active else (0,220,0),2)
+                        (0,0,255) if active else (0,165,255) if candidates else (0,220,0),2)
             writer.write(frame)
             frame_idx+=1
     finally:

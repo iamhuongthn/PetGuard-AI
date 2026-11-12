@@ -12,7 +12,7 @@ import pandas as pd
 from PIL import Image, ImageDraw
 
 from .main import process_video
-from .zone import resize_frame
+from .zone import resize_frame, validate_polygon
 
 BASE = Path("/content/PetGuard-AI") if Path("/content/PetGuard-AI").exists() else Path(__file__).resolve().parents[1]
 RUNS = BASE / "results" / "runs"
@@ -135,8 +135,10 @@ def confirm(state, mode):
     pts = state["points"]
     if len(pts) < 3:
         return state, "Select at least 3 corners."
-    if cv2.contourArea(np.array(pts, np.int32)) < 100:
-        return state, "Area is too small. Draw a larger zone."
+    try:
+        validate_polygon(pts, state.get("size"))
+    except ValueError as exc:
+        return state, str(exc)
     state["mode"] = mode
     state["revision"] += 1
     state["saved"] = {"polygon": [p[:] for p in pts], "label": mode,
