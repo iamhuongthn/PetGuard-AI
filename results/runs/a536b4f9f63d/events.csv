@@ -1,0 +1,3 @@
+source,frame,video_seconds,pet_class,confidence,event
+854179-hd_1920_1080_25fps.mp4,149,5.96,dog,0.9375,VIOLATION
+854179-hd_1920_1080_25fps.mp4,165,6.6,dog,0.9409,VIOLATION

@@ -1,0 +1,3 @@
+sample_id,source,video_id,frame_id,scenario,pet_count_ground_truth,expected_zone_status,predicted_zone_status,zone_mode,notes
+e7aee7a13672_00188,real_video,e7aee7a13672,188,floor_zone,2,VIOLATION,SAFE,floor,Boundary ambiguous; provisional label from annotated video; verify using original footage.
+e7aee7a13672_00194,real_video,e7aee7a13672,194,floor_zone,2,VIOLATION,SAFE,floor,Boundary ambiguous; provisional label from annotated video; verify using original footage.

@@ -1,0 +1,2 @@
+samples,TP,TN,FP,FN,zone_accuracy,false_violation_rate,violation_recall
+50,7,41,0,2,0.96,0.0,0.7777777777777778

@@ -1,0 +1,28 @@
+{
+  "polygon": [
+    [
+      73,
+      197
+    ],
+    [
+      337,
+      196
+    ],
+    [
+      333,
+      452
+    ],
+    [
+      73,
+      463
+    ]
+  ],
+  "label": "Floor or room area",
+  "zone_mode": "floor",
+  "size": [
+    960,
+    540
+  ],
+  "video_name": "854179-hd_1920_1080_25fps.mp4",
+  "revision": 1
+}
