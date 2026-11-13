@@ -1,0 +1,28 @@
+{
+  "polygon": [
+    [
+      3,
+      92
+    ],
+    [
+      956,
+      94
+    ],
+    [
+      957,
+      533
+    ],
+    [
+      3,
+      533
+    ]
+  ],
+  "label": "Sofa or furniture",
+  "zone_mode": "overlap",
+  "size": [
+    960,
+    540
+  ],
+  "video_name": "12309670_2560_1440_50fps.mp4",
+  "revision": 1
+}

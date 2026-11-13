@@ -1,0 +1,28 @@
+{
+  "polygon": [
+    [
+      372,
+      57
+    ],
+    [
+      773,
+      51
+    ],
+    [
+      781,
+      477
+    ],
+    [
+      391,
+      485
+    ]
+  ],
+  "label": "Sofa or furniture",
+  "zone_mode": "overlap",
+  "size": [
+    960,
+    506
+  ],
+  "video_name": "6853902-uhd_4096_2160_25fps.mp4",
+  "revision": 2
+}
