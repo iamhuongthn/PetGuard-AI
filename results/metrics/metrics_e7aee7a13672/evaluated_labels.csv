@@ -1,0 +1,51 @@
+sample_id,source,video_id,frame_id,scenario,pet_count_ground_truth,expected_zone_status,predicted_zone_status,zone_mode,notes
+e7aee7a13672_00000,real_video,e7aee7a13672,0,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00006,real_video,e7aee7a13672,6,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00012,real_video,e7aee7a13672,12,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00019,real_video,e7aee7a13672,19,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00025,real_video,e7aee7a13672,25,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00032,real_video,e7aee7a13672,32,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00038,real_video,e7aee7a13672,38,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00045,real_video,e7aee7a13672,45,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00051,real_video,e7aee7a13672,51,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00058,real_video,e7aee7a13672,58,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00064,real_video,e7aee7a13672,64,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00071,real_video,e7aee7a13672,71,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00077,real_video,e7aee7a13672,77,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00084,real_video,e7aee7a13672,84,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00090,real_video,e7aee7a13672,90,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00097,real_video,e7aee7a13672,97,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00103,real_video,e7aee7a13672,103,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00110,real_video,e7aee7a13672,110,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00116,real_video,e7aee7a13672,116,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00123,real_video,e7aee7a13672,123,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00129,real_video,e7aee7a13672,129,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00136,real_video,e7aee7a13672,136,floor_zone,2,SAFE,SAFE,floor,Boundary ambiguous; provisional label from annotated video; verify using original footage.
+e7aee7a13672_00142,real_video,e7aee7a13672,142,floor_zone,2,VIOLATION,VIOLATION,floor,Boundary ambiguous; provisional label from annotated video; verify using original footage.
+e7aee7a13672_00149,real_video,e7aee7a13672,149,floor_zone,2,VIOLATION,VIOLATION,floor,Dog visibly overlaps/occupies left restricted floor area; provisional visual label.
+e7aee7a13672_00155,real_video,e7aee7a13672,155,floor_zone,2,VIOLATION,VIOLATION,floor,Dog visibly overlaps/occupies left restricted floor area; provisional visual label.
+e7aee7a13672_00162,real_video,e7aee7a13672,162,floor_zone,2,VIOLATION,VIOLATION,floor,Dog visibly overlaps/occupies left restricted floor area; provisional visual label.
+e7aee7a13672_00168,real_video,e7aee7a13672,168,floor_zone,2,VIOLATION,VIOLATION,floor,Dog visibly overlaps/occupies left restricted floor area; provisional visual label.
+e7aee7a13672_00175,real_video,e7aee7a13672,175,floor_zone,2,VIOLATION,VIOLATION,floor,Dog visibly overlaps/occupies left restricted floor area; provisional visual label.
+e7aee7a13672_00181,real_video,e7aee7a13672,181,floor_zone,2,VIOLATION,VIOLATION,floor,Dog visibly overlaps/occupies left restricted floor area; provisional visual label.
+e7aee7a13672_00188,real_video,e7aee7a13672,188,floor_zone,2,VIOLATION,SAFE,floor,Boundary ambiguous; provisional label from annotated video; verify using original footage.
+e7aee7a13672_00194,real_video,e7aee7a13672,194,floor_zone,2,VIOLATION,SAFE,floor,Boundary ambiguous; provisional label from annotated video; verify using original footage.
+e7aee7a13672_00201,real_video,e7aee7a13672,201,floor_zone,2,SAFE,SAFE,floor,Boundary ambiguous; provisional label from annotated video; verify using original footage.
+e7aee7a13672_00207,real_video,e7aee7a13672,207,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00214,real_video,e7aee7a13672,214,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00220,real_video,e7aee7a13672,220,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00227,real_video,e7aee7a13672,227,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00233,real_video,e7aee7a13672,233,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00240,real_video,e7aee7a13672,240,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00246,real_video,e7aee7a13672,246,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00253,real_video,e7aee7a13672,253,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00259,real_video,e7aee7a13672,259,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00266,real_video,e7aee7a13672,266,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00272,real_video,e7aee7a13672,272,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00279,real_video,e7aee7a13672,279,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00285,real_video,e7aee7a13672,285,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00292,real_video,e7aee7a13672,292,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00298,real_video,e7aee7a13672,298,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00305,real_video,e7aee7a13672,305,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00311,real_video,e7aee7a13672,311,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.
+e7aee7a13672_00318,real_video,e7aee7a13672,318,floor_zone,2,SAFE,SAFE,floor,Two dogs visible outside the left restricted area; provisional visual label.

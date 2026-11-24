@@ -2,6 +2,8 @@
 from __future__ import annotations
 import json
 import subprocess
+import shutil
+from .provenance import environment, sha256_file
 import uuid
 from pathlib import Path
 
@@ -159,12 +161,15 @@ def run_processing(state, progress=gr.Progress()):
         return state, None, None, None, "Please upload a video and confirm a restricted area first."
     if state["dirty"]:
         return state, None, None, None, "You have unsaved changes. Confirm or Cancel before processing."
+    if not shutil.which("ffmpeg"):
+        return state, None, None, None, "FFmpeg is missing. Install it and restart the application."
     config = state["saved"]
     if config["video_name"] != Path(state["video"]).name:
         return state, None, None, None, "The selected area belongs to another video."
     run_id = uuid.uuid4().hex[:12]
     folder = RUNS / run_id
     folder.mkdir(parents=True, exist_ok=False)
+    config = {**config, "source_sha256": sha256_file(state["video"]), "weights": "yolov8s.pt", "confidence": 0.35, "imgsz": 960, "confirm_frames": 5, "clear_frames": 5, "overlap_threshold": 0.2}
     (folder / "zone_config.json").write_text(json.dumps(config, indent=2))
     output = folder / "annotated.mp4"
     csv_path = folder / "events.csv"
@@ -179,6 +184,7 @@ def run_processing(state, progress=gr.Progress()):
         command = ["ffmpeg", "-y", "-loglevel", "error", "-i", str(output),
                    "-c:v", "libx264", "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(browser_mp4)]
         subprocess.run(command, check=True, capture_output=True, text=True)
+        (folder / "run_metadata.json").write_text(json.dumps({"environment": environment(), "model_sha256": sha256_file("yolov8s.pt") if Path("yolov8s.pt").is_file() else None, "summary": summary}, indent=2))
         state = dict(state)
         state["result_revision"] = state["revision"]
         progress(1.0, desc="Complete")
@@ -235,7 +241,7 @@ def build_app():
         redraw_button.click(redraw, inputs=[state], outputs=[state, preview, status])
         edit_button.click(edit, inputs=[state], outputs=[state, preview, mode, status])
         cancel_button.click(cancel, inputs=[state], outputs=[state, preview, mode, status])
-        mode.change(change_mode, inputs=[mode, state], outputs=[state, status])
+        mode.input(change_mode, inputs=[mode, state], outputs=[state, status])
         confirm_button.click(confirm_and_clear, inputs=[state, mode],
                              outputs=[state, result_video, events_file, predictions_file, status])
         process_button.click(run_processing, inputs=[state],
@@ -247,4 +253,4 @@ def build_app():
     return app
 
 if __name__ == "__main__":
-    build_app().queue(default_concurrency_limit=1).launch(share=True, show_error=True)
+    build_app().queue(default_concurrency_limit=1).launch(share=False, show_error=True)

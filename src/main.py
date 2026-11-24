@@ -4,7 +4,6 @@ import time
 import cv2
 import numpy as np
 import pandas as pd
-from .detector import PetDetector
 from .zone import resize_frame,is_violation,validate_polygon
 from .temporal import TemporalConfirm
 from .event_logger import write_events
@@ -12,13 +11,16 @@ from .event_logger import write_events
 def process_video(input_path, output_path, event_csv, polygon,
                   weights='yolov8s.pt', target_width=960,
                   confidence=0.35, imgsz=960, mode='floor',
-                  overlap_threshold=0.2, confirm_frames=5):
+                  overlap_threshold=0.2, confirm_frames=5, detector_factory=None):
+    if detector_factory is None:
+        from .detector import PetDetector
+        detector_factory = PetDetector
     validate_polygon(polygon)
     cap=cv2.VideoCapture(str(input_path))
     if not cap.isOpened():raise ValueError(f'Cannot open video: {input_path}')
     fps=float(cap.get(cv2.CAP_PROP_FPS))
     if fps<=0:fps=25.0
-    detector=PetDetector(weights, confidence, imgsz)
+    detector=detector_factory(weights, confidence, imgsz)
     state=TemporalConfirm(confirm_frames)
     output_path=Path(output_path);output_path.parent.mkdir(parents=True,exist_ok=True)
     writer=None; frame_idx=0;events=[];predictions=[];timings=[]
@@ -31,6 +33,7 @@ def process_video(input_path, output_path, event_csv, polygon,
             frame=resize_frame(original,target_width)
             h,w=frame.shape[:2]
             if writer is None:
+                validate_polygon(polygon, (w,h))
                 writer=cv2.VideoWriter(str(output_path),cv2.VideoWriter_fourcc(*'mp4v'),fps,(w,h))
                 if not writer.isOpened():raise RuntimeError('VideoWriter failed to open')
             start=time.perf_counter()
@@ -51,12 +54,14 @@ def process_video(input_path, output_path, event_csv, polygon,
             status = ("CONFIRMED VIOLATION" if active and candidates else
                       "RECENT VIOLATION - CLEARING" if active else
                       "PENDING - VERIFYING" if candidates else
-                      "SAFE - PET OUTSIDE ZONE" if checked else "NO PET DETECTED")
+                      "PET OUTSIDE ZONE" if checked else "NO PET DETECTED")
             predictions.append({
                 'frame': frame_idx,
                 'seconds': round(frame_idx/fps, 3),
                 'pet_count': len(checked),
                 'status': status,
+                'spatial_status': 'VIOLATION' if candidates else 'SAFE',
+                'alert_state': 'ACTIVE' if active else 'PENDING' if candidates else 'INACTIVE',
                 'detections': json.dumps(checked),
                 'candidate_violation': bool(candidates),
                 'confirmed_violation': bool(active),
@@ -79,6 +84,8 @@ def process_video(input_path, output_path, event_csv, polygon,
     finally:
         cap.release()
         if writer is not None:writer.release()
+    if frame_idx == 0:
+        raise ValueError('No decodable video frames')
     write_events(events,event_csv)
     pred_path=Path(event_csv).with_name('frame_predictions.csv')
     pd.DataFrame(predictions).to_csv(pred_path,index=False)
